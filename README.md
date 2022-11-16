@@ -22,3 +22,7 @@ docker run --rm --name demo_container -v /absolute/path/dockerized_pipeline_demo
 ```
 
 If everything went well, you should see three plots inside the `fig/` folder.
+
+## Requirements
+
+You need to have Docker installed.
