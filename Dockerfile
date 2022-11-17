@@ -6,4 +6,6 @@ COPY _targets.R /_targets.R
 
 COPY functions.R /functions.R
 
-CMD R -e "install.packages('chronicler');targets::tar_make()"
+RUN echo $RUNNER_WORKSPACE
+
+CMD R -e "targets::tar_make()"
