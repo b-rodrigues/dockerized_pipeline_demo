@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
     - name: Docker Run Action
-      run: docker run --rm --name my_pipeline_container -v /github/workspace/fig/:/home/scripts:rw my-image-name:latest   
+      run: docker run --rm --name my_pipeline_container -v /github/workspace/fig/:/home/scripts:rw my-image-name   
