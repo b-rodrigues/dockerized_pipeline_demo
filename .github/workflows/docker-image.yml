@@ -16,3 +16,14 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+    - name: Docker Run Action
+    # You may pin to the exact commit or the version.
+    # uses: addnab/docker-run-action@4f65fabd2431ebc8d299f8e5a018d79a769ae185
+    uses: addnab/docker-run-action@v3
+    with:
+      # Image
+      image: 
+      # Options
+      options: # optional
+      # Run command in container
+      run: docker run --rm --name my_pipeline_container -v /github/workspace/fig/:/home/scripts:rw my-image-name:latest   
