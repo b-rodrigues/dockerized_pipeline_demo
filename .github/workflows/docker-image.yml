@@ -21,4 +21,3 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: my-figures
-        path: /github/workspace/fig/
