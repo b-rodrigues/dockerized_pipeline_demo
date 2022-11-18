@@ -26,3 +26,8 @@ If everything went well, you should see three plots inside the `fig/` folder.
 ## Requirements
 
 You need to have Docker installed.
+
+## Github Actions
+
+Each time a change gets pushed to this repo, a github actions triggers and plots get saved as an 
+artifact.
