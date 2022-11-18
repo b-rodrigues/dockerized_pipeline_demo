@@ -6,6 +6,4 @@ COPY _targets.R /_targets.R
 
 COPY functions.R /functions.R
 
-RUN echo $RUNNER_WORKSPACE
-
 CMD R -e "targets::tar_make()"
