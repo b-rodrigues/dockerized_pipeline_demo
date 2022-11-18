@@ -1,0 +1,8 @@
+name: Hello world
+on: [push]
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello from Github Actions!"
+      - run: echo "This command is running from an Ubuntu VM each time you push."
