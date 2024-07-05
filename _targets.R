@@ -4,7 +4,6 @@ library(dplyr)
 library(ggplot2)
 source("functions.R")
 
-
 list(
     tar_target(
         unemp_data,
